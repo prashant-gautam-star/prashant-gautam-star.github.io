@@ -1,42 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Prashant Gautam | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        h1 { color: #333; }
-        h2 { margin-top: 30px; }
-        .section { margin-bottom: 20px; }
-        a { color: blue; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 8px;
+        }
+
+        p {
+            color: #cbd5f5;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .project-links a {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .certificate img {
+            width: 320px;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: transform 0.3s;
+        }
+
+        .certificate img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
     </style>
 </head>
+
 <body>
+<div class="container">
 
+    <!-- Hero -->
     <h1>Hi, I'm Prashant Gautam 👋</h1>
-    <p>BTech Student in Mathematics & Computing @ IIT Jammu</p>
+    <p>B.Tech — Mathematics & Computing @ IIT Jammu</p>
+    <p><strong>Backend-focused developer</strong> interested in APIs, data handling, and problem solving.</p>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>GATE Engineering Mathematics Formula API</strong> – 
-                <a href="https://gate-maths-formula-app.onrender.com" target="_blank">Live Link</a> |
-                <a href="https://github.com/prashant-gautam-star/gate-maths-formula-app" target="_blank">GitHub Repo</a>
-            </li>
-        </ul>
+    <!-- Projects -->
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>GATE Engineering Mathematics Formula API</h3>
+        <p>
+            Backend REST API to store, search, and filter 50+ GATE Engineering Mathematics formulas
+            across multiple topics.
+        </p>
+        <p><strong>Tech:</strong> Python, Flask, REST APIs, JSON</p>
+        <div class="project-links">
+            <a href="https://gate-maths-formula-app.onrender.com" target="_blank">Live API</a>
+            <a href="https://github.com/prashant-gautam-star/gate-maths-formula-app" target="_blank">GitHub</a>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <p>Python, Flask, C++, Git, SQL, Machine Learning, Data Structures, Algorithms</p>
+    <!-- Skills -->
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">C++</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Data Structures</div>
+        <div class="skill">Algorithms</div>
     </div>
 
-    <div class="section">
-        <h2>Contact</h2>
+    <!-- Certification -->
+    <h2>Certification</h2>
+    <div class="card certificate">
+        <p><strong>FreeCodeCamp — Responsive Web Design</strong></p>
+        <a href="https://www.freecodecamp.org/certification/fcc-a16abd55-909e-42a3-aad1-f791ce138fb0/responsive-web-design" target="_blank">
+            <img src="freecodecamp_certificate.png" alt="FreeCodeCamp Certificate">
+        </a>
+    </div>
+
+    <!-- Contact -->
+    <h2>Contact</h2>
+    <div class="card">
         <p>Email: 2024UMA0219@iitjammu.ac.in</p>
-        <p>GitHub: <a href="https://github.com/prashant-gautam-star">github.com/prashant-gautam-star</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/username">linkedin.com/in/username</a></p>
+        <p>GitHub: <a href="https://github.com/prashant-gautam-star" target="_blank">github.com/prashant-gautam-star</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
     </div>
 
+    <footer>
+        © 2025 Prashant Gautam
+    </footer>
+
+</div>
 </body>
 </html>
+
